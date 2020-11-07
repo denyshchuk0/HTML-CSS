@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+}
+
+:root {
+  --color_main_1: #1e90ff;
+  --color_main_2: #033661;
+  --color_text_btn_main: #dd0000;
+  --color_text: #000;
+  --color_text_btn_white: #fff;
+  --color_text_btn_colorized: #1b7fd0;
+  --color_bg_btn_hover: #caddea;
+}
+
+@font-face {
+  font-family: Font_Bold;
+  src: url("../fonts//Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Font_Medium;
+  src: url("../fonts//Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Font_Regular;
+  src: url("../fonts//Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+h1 {
+  font-family: Font_Bold;
+
+  color: var(--color_main_1);
+}
+h2 {
+  font-family: Font_Bold;
+  font-size: 28px;
+  color: var(--color_main_1);
+}
+h3 {
+  font-family: Font_Medium;
+  font-size: 22px;
+  color: var(--color_text);
+}
+h4 {
+  font-family: Font_Medium;
+  font-size: 18px;
+  color: var(--color_main_1);
+}
+p.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.btn-read_more {
+  background-color: var(--color_text_btn_colorized);
+  color: var(--color_text_btn_white);
+  display: inline-block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Font_Regular;
+  font-size: 16px;
+}
+.btn-read_more:hover {
+  background-color: var(--color_bg_btn_hover);
+  color: var(--color_text_btn_colorized);
+}
+
+/******Start header*******/
+.header .bg_main_2 {
+  background-color: var(--color_main_2);
+  background-image: url("../images/bg_wide.png");
+}
+.header span,
+.header a {
+  color: var(--color_text_btn_white);
+  font-family: Font_Regular;
+  font-size: 20px;
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.header span {
+  margin-right: 5px;
+}
+.header .login::after {
+  content: "";
+  width: 3px;
+  height: 17px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.header .upText {
+  color: var(--color_text_btn_white);
+  font-family: Font_Regular;
+  font-size: 20px;
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .rightText a {
+  float: right;
+}
+
+.header .navbar {
+  background-color: var(--color_main_1);
+}
+.header .navigation {
+  display: block;
+  width: 100%;
+}
+.header .navbar ul {
+  padding-left: 0;
+  margin: 0;
+}
+.header .navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+.header .navbar ul li a {
+  padding: 10px 18px;
+  text-transform: uppercase;
+}
+.header .navbar ul li::after {
+  content: "";
+  border-right: 3px solid white;
+  border-radius: 3px;
+}
+.header .navbar ul li:last-child::after {
+  content: "";
+  display: none;
+}
+
+.header .navbar ul li a:hover {
+  background-color: var(--color_bg_btn_hover);
+  color: var(--color_text_btn_colorized);
+}
+
+.header .navbar ul li:hover::after {
+  content: "";
+  border-right: 3px solid transparent;
+}
+.header .main_bg {
+  height: 560px;
+  background: url("../images//main_bg.png") no-repeat center center;
+}
+.header .logo {
+  padding: 30px 0px;
+}
+.header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color_text_btn_colorized);
+  padding: 0px 33px 0px 33px;
+}
+.header .h1Text {
+  background-color: var(--color_bg_btn_hover);
+  padding: 10px 0px;
+}
+/******End header*******/
+.main .price_bg {
+  background-color: var(--color_main_2);
+  background-image: url("../images/bg_wide.png");
+}
+.main .price h2 {
+  font-family: Font_Bold;
+  color: var(--color_text_btn_colorized);
+  text-transform: uppercase;
+  padding: 12px 0 12px 18px;
+  background-color: var(--color_bg_btn_hover);
+  background-image: url("../images/Arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 65% center;
+}
+.main .price .discount {
+  display: inline-block;
+  float: right;
+}
+.main .price .discount span {
+  text-transform: none;
+  font-family: Font_Regular;
+  font-weight: 100;
+}
+.main strong {
+  color: #dd0000;
+}
+
+.main .price .discount {
+  display: inline-block;
+  float: right;
+}
+.main .price .discount span {
+  text-transform: none;
+  font-family: Font_Regular;
+  font-weight: 100;
+}
